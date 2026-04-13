@@ -8,6 +8,10 @@ const [workshops,setWorkshops]=useState([
 { id:103,title:'OpenFOAM Basics',date:'10 May 2026',status:'Pending'}
 ]);
 
+const handleAccept=(id)=>{
+setWorkshops(prev=>prev.map(ws=> ws.id===id?{...ws,status:'Upcoming'}:ws))
+}
+
 return(
 <div className="min-h-screen bg-[#F8FAFC] p-6 sm:p-10">
 
@@ -28,6 +32,12 @@ ws.status==='Upcoming'
 
 <h3 className="font-bold">{ws.title}</h3>
 <p className="text-sm text-gray-500">📅 {ws.date}</p>
+
+<button 
+onClick={()=>handleAccept(ws.id)}
+className="bg-indigo-600 text-white px-3 py-2 rounded mt-3">
+Accept
+</button>
 
 </div>
 ))}
