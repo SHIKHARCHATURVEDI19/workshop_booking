@@ -9,14 +9,22 @@ const [workshops,setWorkshops]=useState([
 ]);
 
 return(
-<div className="min-h-screen bg-[#F8FAFC] p-10">
+<div className="min-h-screen bg-[#F8FAFC] p-6 sm:p-10">
 
 <h1 className="text-3xl font-bold mb-6">Workshop Requests</h1>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
 {workshops.map((ws)=>(
 <div key={ws.id} className="bg-white p-6 rounded-xl shadow">
+
+<div className={`px-2 py-1 text-xs mb-2 ${
+ws.status==='Upcoming'
+? 'bg-green-100 text-green-600'
+: 'bg-yellow-100 text-yellow-600'
+}`}>
+{ws.status}
+</div>
 
 <h3 className="font-bold">{ws.title}</h3>
 <p className="text-sm text-gray-500">📅 {ws.date}</p>
