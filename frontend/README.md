@@ -3,7 +3,8 @@ BEFORE ----------------------------------------------------
 
 
 AFTER-------------------------------------------------------------------
-<img width="1919" height="1042" alt="after" src="https://github.com/user-attachments/assets/0568cca6-17fe-4d4f-ac79-96f2d15f1d58" />
+<img width="1889" height="963" alt="Screenshot 2026-04-14 005623" src="https://github.com/user-attachments/assets/eb776ae6-1af5-45f4-84b9-778dbd1e536a" />
+
 # Workshop Booking UI/UX Enhancement
 
 This project is part of the FOSSEE Python Screening Task. The objective was to redesign and enhance the Workshop Booking system with a focus on improved UI/UX, responsiveness, and usability using React.
