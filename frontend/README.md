@@ -1,16 +1,48 @@
-# React + Vite
+# Workshop Booking UI/UX Enhancement
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is part of the FOSSEE Python Screening Task. The objective was to redesign and enhance the Workshop Booking system with a focus on improved UI/UX, responsiveness, and usability using React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Overview
 
-## React Compiler
+The original system was minimal and functional. This redesign transforms it into a modern, responsive, and user-friendly interface while preserving the core workflow.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- View workshop requests
+- Accept workshop requests
+- Dynamic status updates
+- Clean and structured UI
+- Responsive layout
+- Loading and error handling
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- JavaScript
+- Django (Backend)
+
+---
+
+## 🧠 Design Decisions
+
+- Focused on simplicity and clarity  
+- Maintained consistent UI  
+- Improved visual hierarchy  
+- Avoided unnecessary complexity  
+
+---
+
+## ⚙️ Getting Started
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
