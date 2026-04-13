@@ -66,6 +66,24 @@ def index(request):
     return redirect(reverse('workshop_app:login'))
 
 
+def api_workshops(request):
+    """Return workshop data for frontend cards."""
+    if request.method != 'GET':
+        return JsonResponse({'detail': 'Method not allowed'}, status=405)
+
+    workshops = Workshop.objects.select_related('workshop_type').order_by('-date')
+    data = [
+        {
+            'id': workshop.id,
+            'title': workshop.workshop_type.name,
+            'date': workshop.date.strftime('%d %b %Y'),
+            'status': workshop.get_status() or 'Pending',
+        }
+        for workshop in workshops
+    ]
+    return JsonResponse(data, safe=False)
+
+
 # User views
 
 # TODO: Forgot password workflow

@@ -17,12 +17,14 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 from workshop_portal import views
+from workshop_app import views as workshop_views
 from django.conf import settings
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
+    url(r'^api/workshops/$', workshop_views.api_workshops, name='api_workshops'),
     url(r'^workshop/', include('workshop_app.urls')),
     url(r'^reset/', include('django.contrib.auth.urls')),
     url(r'^page/', include('cms.urls')),

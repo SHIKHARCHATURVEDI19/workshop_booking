@@ -5,6 +5,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+node_modules/
 *.log
 develop-eggs/
 eggs/
