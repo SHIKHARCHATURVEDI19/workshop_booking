@@ -1,4 +1,8 @@
+BEFORE ----------------------------------------------------
 <img width="807" height="373" alt="before" src="https://github.com/user-attachments/assets/a5af9617-4ea4-4636-9ab3-07b968b90b53" />
+
+
+AFTER-------------------------------------------------------------------
 <img width="1919" height="1042" alt="after" src="https://github.com/user-attachments/assets/0568cca6-17fe-4d4f-ac79-96f2d15f1d58" />
 # Workshop Booking UI/UX Enhancement
 
