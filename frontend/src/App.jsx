@@ -35,8 +35,14 @@ ws.status==='Upcoming'
 
 <button 
 onClick={()=>handleAccept(ws.id)}
-className="bg-indigo-600 text-white px-3 py-2 rounded mt-3">
-Accept
+disabled={ws.status==='Upcoming'}
+className={`px-3 py-2 rounded mt-3 text-white ${
+ws.status==='Upcoming'
+? 'bg-gray-400'
+: 'bg-indigo-600 hover:bg-indigo-700'
+}`}
+>
+{ws.status==='Upcoming' ? "Accepted" : "Accept"}
 </button>
 
 </div>
